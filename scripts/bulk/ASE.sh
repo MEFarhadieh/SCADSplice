@@ -1,4 +1,4 @@
-### This codes was used after triming FASTQ files to identify ASE in Astrocytes
+### Following codes were used after triming FASTQ files to identify ASE in Astrocytes
 # alignment
 
 ls ~/SCADSplice/bulk/trimed_data/astro/*.gz | awk -F'/' '{print$6}' | awk -F'.' '{print$1}' >star.ID.txt
@@ -107,7 +107,7 @@ rmats2sashimiplot \
 --group-info group.gf \
 -o ~/SCADSplice/bulk/results/astro/Astro_RI_plots/
 
-### This codes was used after triming FASTQ files to identify ASE in Endothelial
+### Following codes were used after triming FASTQ files to identify ASE in Endothelial
 # alignment
 
 ls ~/SCADSplice/bulk/trimed_data/endo/*.gz | awk -F'/' '{print$6}' | awk -F'.' '{print$1}' >star.ID.txt
@@ -216,7 +216,7 @@ rmats2sashimiplot \
 --group-info group.gf \
 -o ~/SCADSplice/bulk/results/endo/endo_RI_plots/
 
-### This codes was used after triming FASTQ files to identify ASE in Microglia
+### Following codes were used after triming FASTQ files to identify ASE in Microglia
 # alignment
 
 ls ~/SCADSplice/bulk/trimed_data/micro/*.gz | awk -F'/' '{print$6}' | awk -F'.' '{print$1}' >star.ID.txt
@@ -325,7 +325,7 @@ rmats2sashimiplot \
 --group-info group.gf \
 -o ~/SCADSplice/bulk/results/micro/micro_RI_plots/
 
-### This codes was used after triming FASTQ files to identify ASE in Neuron
+### Following codes were used after triming FASTQ files to identify ASE in Neuron
 # alignment
 
 ls ~/SCADSplice/bulk/trimed_data/neuro/*.gz | awk -F'/' '{print$6}' | awk -F'.' '{print$1}' >star.ID.txt
