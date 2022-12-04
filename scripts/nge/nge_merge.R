@@ -1,6 +1,7 @@
 library(SingleCellExperiment)
 library(scFlow)
 library(scFlowData)
+setwd("~/SCADSplice/scrnaseq/nge/results/GSE157827")
 
 ensembl_fp <- system.file("extdata","ensembl_mappings.tsv",package="scFlowData")
 ctd_fp <- system.file("extdata","ctd",package="scFlowData")
@@ -8,7 +9,7 @@ manifest_fp <- "/soma/manifest.tsv"
 manifest <- read.delim(manifest_fp)
 
 # read all sce individuals together
-dir_sce <- "~/nge_qc_results/sce_individual"
+dir_sce <- "qc_results/sce_individual"
 
 sce_path <- dir(
   path = dir_sce,
@@ -28,7 +29,7 @@ sce_list <- lapply(sce_pathlist, read_sce)
 for (i in sce_path) {
   write.table(
     sce_list[[i]]@colData@rownames,
-    file = paste0("~/metadata/nge_whitelist/",
+    file = paste0("~/SCADSplice/scrnaseq/nge/results/metadata/nge_whitelist/",
                   sce_list[[i]]@colData@listData[["manifest"]][1],
                   "_whitelist.txt"),
     quote = FALSE, sep = "\t", col.names = FALSE, row.names = FALSE
@@ -59,6 +60,6 @@ sce <- sce[, sce$manifest != "NC11"]
 
 write_sce(
   sce,
-  "~/nge_merge/sce_merged"
+  "~/SCADSplice/scrnaseq/nge/results/sce_merged"
 )
 
