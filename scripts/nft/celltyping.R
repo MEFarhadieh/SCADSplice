@@ -349,7 +349,7 @@ dev.off()
 
 write_sce(
   sce,
-  "~/SCADSplice/scrnaseq/nft/results/sn_typed_sce",
+  "~/SCADSplice/scrnaseq/nft/results/typed_sce",
   write_metadata = TRUE
 )
 
