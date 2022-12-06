@@ -360,7 +360,7 @@ dev.off()
 
 write_sce(
   sce,
-  "~/SCADSplice/scrnaseq/nge/results/sn_typed_sce",
+  "~/SCADSplice/scrnaseq/nge/results/typed_sce",
   write_metadata = TRUE
 )
 
