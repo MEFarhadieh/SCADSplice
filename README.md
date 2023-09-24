@@ -1,6 +1,6 @@
 # SCADSplice
 
-
+![Image of SICILIAN](https://github.com/MEFarhadieh/SCADSplice/blob/main/Abstract.png)
 
 This repository contains code to perform the analyses in the paper:
 > **Analyzing alternative splicing in Alzheimer’s disease postmortem brain: a cell-level perspective**
